@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return( 
   
       <FluentProvider theme={webLightTheme} >
-          <AbilityContext.Provider value={{ability}}> 
+          <AbilityContext.Provider value={ability}> 
              <Component {...pageProps} />
           </AbilityContext.Provider>
       </FluentProvider>
